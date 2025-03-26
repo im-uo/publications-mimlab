@@ -1,0 +1,586 @@
+@article{guan2024crossmodal,
+    author = {Ziyu Guan and Wanqing Zhao and Hongmin Liu and Yuta Nakashima and Noboru Babaguchi and Xiaofei He},
+    title = {Cross-modal Guided Visual Representation Learning for Social Image Retrieval},
+    journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    year = {2024},
+    month = 12,
+    url = {https://ieeexplore.ieee.org/abstract/document/10804591},
+    doi = {https://doi.org/10.1109/TPAMI.2024.3519112},
+    addendum = {(\textbf{Early Access})},
+    abstract = {Social images are often associated with rich but noisy tags from community contributions. Although social tags can potentially provide valuable semantic training information for image retrieval, existing studies all fail to effectively filter noises by exploiting the cross-modal correlation between image content and tags. The current cross-modal vision-and-language representation learning methods, which selectively attend to the relevant parts of the image and text, show a promising direction. However, they are not suitable for social image retrieval since: (1) they deal with natural text sequences where the relationships between words can be easily captured by language models for cross-modal relevance estimation, while the tags are isolated and noisy; (2) they take (image, text) pair as input, and consequently cannot be employed directly for unimodal social image retrieval. This paper tackles the challenge of utilizing cross-modal interactions to learn precise representations for unimodal retrieval. The proposed framework, dubbed CGVR (Cross-modal Guided Visual Representation), extracts accurate semantic representations of images from noisy tags and transfers this ability to image-only hashing subnetwork by a carefully designed training scheme. To well capture correlated semantics and filter noises, it embeds a priori common-sense relationship among tags into attention computation for joint awareness of textual and visual context. Experiments show that CGVR achieves approximately 8.82 and 5.45 points improvement in MAP over the state-of-the-art on two widely used social image benchmarks. CGVR can serve as a new baseline for the image retrieval community. The code is provided at \url{https://github.com/zhaowanqing/CGVR}.}
+}
+
+@article{chen2024learning,
+    author = {Tianwei Chen and Noa Garcia and Mayu Otani and Chenhui Chu and Yuta Nakashima and Hajime Nagahara},
+    title = {Learning More May Not Be Better: Knowledge Transferability in Vision-and-Language Tasks},
+    journal = {Journal of Imaging},
+    year = {2024},
+    month = 11,
+    volume = {10},
+    number = {12},
+    pages = {300},
+    url = {https://www.mdpi.com/2313-433X/10/12/300},
+    doi = {https://doi.org/10.3390/jimaging10120300},
+    abstract = {Is learning more knowledge always better for vision-and-language models? In this paper, we study knowledge transferability in multi-modal tasks. The current tendency in machine learning is to assume that by joining multiple datasets from different tasks, their overall performance improves. However, we show that not all knowledge transfers well or has a positive impact on related tasks, even when they share a common goal. We conducted an exhaustive analysis based on hundreds of cross-experiments on twelve vision-and-language tasks categorized into four groups. While tasks in the same group are prone to improve each other, results show that this is not always the case. In addition, other factors, such as dataset size or the pre-training stage, may have a great impact on how well the knowledge is transferred.}
+}
+
+@article{hirota2024apicture,
+    author = {Yusuke Hirota and Noa Garcia and Mayu Otani and Chenhui Chu and Yuta Nakashima},
+    title = {A picture may be worth a hundred words for visual question answering},
+    journal = {Electronics},
+    year = {2024},
+    month = 10,
+    volume = {13},
+    number = {21},
+    pages = {4290},
+    url = {https://www.mdpi.com/2079-9292/13/21/4290},
+    doi = {https://doi.org/10.3390/electronics13214290},
+    abstract = {How far can textual representations go in understanding images? In image understanding, effective representations are essential. Deep visual features from object recognition models currently dominate various tasks, especially Visual Question Answering (VQA). However, these conventional features often struggle to capture image details in ways that match human understanding, and their decision processes lack interpretability. Meanwhile, the recent progress in language models suggests that descriptive text could offer a viable alternative. This paper investigated the use of descriptive text as an alternative to deep visual features in VQA. We propose to process description–question pairs rather than visual features, utilizing a language-only Transformer model. We also explored data augmentation strategies to enhance training set diversity and mitigate statistical bias. Extensive evaluation shows that textual representations using approximately a hundred words can effectively compete with deep visual features on both the VQA 2.0 and VQA-CP v2 datasets. Our qualitative experiments further reveal that these textual representations enable clearer investigation of VQA model decision processes, thereby improving interpretability.},
+}
+
+@article{qian2024cardiovascular,
+title = {Is cardiovascular risk profiling from {UK Biobank} retinal images using explicit deep learning estimates of traditional risk factors equivalent to actual risk measurements? {A} prospective cohort study design},
+author = {Yiming Qian and Liangzhi Li and Yuta Nakashima and Hajime Nagahara and Kohji Nishida and Ryo Kawasaki},
+journal = {BMJ Open},
+volume = {14},
+pages = {e078609},
+year = {2024},
+month = 10,
+url = {https://bmjopen.bmj.com/content/14/10/e078609.info},
+doi = {https://doi.org/10.1136/bmjopen-2023-078609},
+abstract = {Despite extensive exploration of potential biomarkers of cardiovascular diseases (CVDs) derived from retinal images, it remains unclear how retinal images contribute to CVD risk profiling and how the results can inform lifestyle modifications. Therefore, we aimed to determine the performance of cardiovascular risk prediction model from retinal images via explicitly estimating 10 traditional CVD risk factors and compared with the model based on actual risk measurements.}
+}
+
+@article{pang2024videosummary,
+    author = {Zongshang Pang and Yuta Nakashima and Mayu Otani and Hajime Nagahara},
+    title = {Unleashing the Power of Contrastive Learning for Zero-Shot Video Summarization},
+    journal = {Journal of Imaging},
+    year = {2024},
+    month = 9,
+    volume = {10},
+    number = {9},
+    pages = {229},
+    url = {https://www.mdpi.com/2313-433X/10/9/229},
+    doi = {https://doi.org/10.3390/jimaging10090229},
+    abstract = {Video summarization aims to select the most informative subset of frames in a video to facilitate efficient video browsing. Past efforts have invariantly involved training summarization models with annotated summaries or heuristic objectives. In this work, we reveal that features pre-trained on image-level tasks contain rich semantic information that can be readily leveraged to quantify frame-level importance for zero-shot video summarization. Leveraging pre-trained features and contrastive learning, we propose three metrics featuring a desirable keyframe: local dissimilarity, global consistency, and uniqueness. We show that the metrics can well-capture the diversity and representativeness of frames commonly used for the unsupervised generation of video summaries, demonstrating competitive or better performance compared to past methods when no training is needed. We further propose a contrastive learning-based pre-training strategy on unlabeled videos to enhance the quality of the proposed metrics and, thus, improve the evaluated performance on the public benchmarks TVSum and SumMe.}
+}
+
+@article{katirai2024socialissues,
+    author = {Amelia Katirai and Noa Garcia and Kazuki Ide and Yuta Nakashima and Atsuo Kishimoto},
+    title = {Situating the social issues of image generation models in the model life cycle: a sociotechnical approach},
+    journal = {AI and Ethics},
+    year = {2024},
+    month = 7,
+    pages = {pp.~1--18},
+    doi = {https://doi.org/10.1007/s43681-024-00517-3},
+    url = {https://link.springer.com/article/10.1007/s43681-024-00517-3},
+    abstract = {The race to develop image generation models is intensifying, with a rapid increase in the number of text-to-image models available. This is coupled with growing public awareness of these technologies. Though other generative AI models---notably, large language models—have received recent critical attention for the social and other non-technical issues they raise, there has been relatively little comparable examination of image generation models. This paper reports on a novel, comprehensive categorization of the social issues associated with image generation models. At the intersection of machine learning and the social sciences, we report the results of a survey of the literature, identifying seven issue clusters arising from image generation models: data issues, intellectual property, bias, privacy, and the impacts on the informational, cultural, and natural environments. We situate these social issues in the model life cycle, to aid in considering where potential issues arise, and mitigation may be needed. We then compare these issue clusters with what has been reported for large language models. Ultimately, we argue that the risks posed by image generation models are comparable in severity to the risks posed by large language models, and that the social impact of image generation models must be urgently considered, even as their development and deployment are pushed forward.}
+}
+
+@article{wu2024goya,
+    author = {Yankun Wu and Yuta Nakashima and Noa Garcia},
+    title = {{GOYA}: Leveraging Generative Art for Content-Style Disentanglement},
+    journal = {Journal of Imaging},
+    year = {2024},
+    month = 6,
+    volume = {10},
+    number = {7},
+    pages = {156},
+    doi = {https://doi.org/10.3390/jimaging10070156},
+    url = {https://www.mdpi.com/2313-433X/10/7/156},
+    abstract = {The content-style duality is a fundamental element in art. These two dimensions can be easily differentiated by humans: content refers to the objects and concepts in an artwork, and style to the way it looks. Yet, we have not found a way to fully capture this duality with visual representations. While style transfer captures the visual appearance of a single artwork, it fails to generalize to larger sets. Similarly, supervised classification-based methods are impractical since the perception of style lies on a spectrum and not on categorical labels. We thus present GOYA, which captures the artistic knowledge of a cutting-edge generative model for disentangling content and style in art. Experiments show that GOYA explicitly learns to represent the two artistic dimensions (content and style) of the original artistic image, paving the way for leveraging generative models in art analysis.}
+}
+
+@article{chen2024emotional,
+    author = {Tianwei Chen and Noa Garcia and Liangzhi Li and  Yuta Nakashima},
+    title = {Exploring Emotional Stimuli Detection in Artworks: A Benchmark Dataset and Baselines Evaluation},
+    journal = {Journal of Imaging},
+    volume = {10},
+    number = {6},
+    year = {2024},
+    month = 6,
+    pages = {136},
+    doi = {https://doi.org/10.3390/jimaging10060136},
+    url = {https://www.mdpi.com/2313-433X/10/6/136},
+    abstract = {We introduce an emotional stimuli detection task that targets extracting emotional regions that evoke people’s emotions (i.e., emotional stimuli) in artworks. This task offers new challenges to the community because of the diversity of artwork styles and the subjectivity of emotions, which can be a suitable testbed for benchmarking the capability of the current neural networks to deal with human emotion. For this task, we construct a dataset called APOLO for quantifying emotional stimuli detection performance in artworks by crowd-sourcing pixel-level annotation of emotional stimuli. APOLO contains 6781 emotional stimuli in 4718 artworks for validation and testing. We also evaluate eight baseline methods, including a dedicated one, to show the difficulties of the task and the limitations of the current techniques through qualitative and quantitative experiments.}
+}
+
+@article{wang2024facade,
+    author = {Bowen Wang and Jiaxin Zhang and Ran Zhang and Yunqin Li and Liangzhi Li and Yuta Nakashima},
+    title = {Improving facade parsing with vision transformers and line integration},
+    journal = {Advanced Engineering Informatics},
+    year = {2023},
+    month = 4,
+    pages = {102463},
+    doi = {https://doi.org/10.1016/j.aei.2024.102463},
+    url = {https://www.sciencedirect.com/science/article/pii/S1474034624001113},
+    abstract = {Facade parsing stands as a pivotal computer vision task with far-reaching applications in areas like architecture, urban planning, and energy efficiency. Despite the recent success of deep learning-based methods in yielding impressive results on certain open-source datasets, their viability for real-world applications remains uncertain. Real-world scenarios are considerably more intricate, demanding greater computational efficiency. Existing datasets often fall short in representing these settings, and previous methods frequently rely on extra detection models to enhance accuracy, which requires much computation cost. In this paper, we first introduce Comprehensive Facade Parsing (CFP), a dataset meticulously designed to encompass the intricacies of real-world facade parsing tasks. Comprising a total of 602 high-resolution street-view images, this dataset captures a diverse array of challenging scenarios, including sloping angles and densely clustered buildings, with painstakingly curated annotations for each image. Moreover, a new pipeline is proposed known as Revision-based Transformer Facade Parsing (RTFP). This marks the pioneering utilization of Vision Transformers (ViT) in facade parsing, and our experimental results definitively substantiate its merit. We also design Line Acquisition, Filtering, and Revision (LAFR), an efficient yet accurate revision algorithm that can improve the segment result solely from simple line detection using prior knowledge of the facade. In ECP 2011, RueMonge 2014, and our CFP, the experimental results verify the superiority of our method. The dataset and code are available at \url{https://github.com/wbw520/RTFP}.}
+}
+
+@article{nakashima2024bias,
+    author = {Yuta Nakashima and Yusuke Hirota and Yankun Wu and Noa Garcia},
+    title = {Societal Bias in Vision-and-Language Datasets and Models},
+    journal = {Journal of the Imaging Society of Japan},
+    year = {2023},
+    month = 12,
+    volume = {62},
+    number = {6},
+    pages = {pp.~599--609},
+    doi = {https://doi.org/10.11370/isj.62.599},
+    url = {https://www.jstage.jst.go.jp/article/isj/62/6/62_599/_article/-char/ja/},
+    abstract = {Vision-and-Language is now one of the popular research areas, which lies between computer vision and natural language processing. Researchers have been tackling various tasks offered by dedicated datasets, such as image captioning and visual question answering, and built a variety of models for state-of-the-art performance. At the same time, people are aware of the bias in these models, which can be especially harmful when the bias involves demographic attributes. This paper introduces our recent two works presented at IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023. The first work sheds light on social bias in a large-scale, uncurated dataset, which is indispensable for training recent models. The second work presents a model-agnostic framework to mitigate gender bias for arbitrary image captioning models. This paper gives high-level ideas about these works, so interested readers may refer to the original works.}
+}
+
+@article{okita2023atlantoaxial,
+    author = {Yasutaka Okita and Toru Hirano and Bowen Wang and Yuta Nakashima and Saki Minoda and Hajime Nagahara and Atsushi Kumanogoh},
+    title = {Automatic evaluation of atlantoaxial subluxation in rheumatoid arthritis by a deep learning model},
+    journal = {Arthritis Research \& Therapy},
+    year = {2023},
+    month = 9,
+    volume = {25},
+    pages = {181},
+    doi = {https://doi.org/10.1186/s13075-023-03172-x},
+    url = {https://link.springer.com/article/10.1186/s13075-023-03172-x}
+}
+
+@article{goto2023development,
+    author = {Kiichi Goto and Taikan Suehara and Tamaki Yoshioka and Masakazu Kurata and Hajime Nagahara and Yuta Nakashima and Noriko Takemura and Masako Iwasaki},
+    title = {Development of a vertex finding algorithm using recurrent neural network},
+    journal = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+    year = {2023},
+    month = 2,
+    volume = {1047},
+    pages = {p.~167836},
+    doi = {https://doi.org/10.1016/j.nima.2022.167836},
+    url = {https://www.sciencedirect.com/science/article/pii/S0168900222011287},
+    abstract = {Deep learning is a rapidly-evolving technology with the possibility to significantly improve the physics reach of collider experiments. In this study we developed a novel vertex finding algorithm for future lepton colliders such as the International Linear Collider. We deploy two networks: one consists of simple fully-connected layers to look for vertex seeds from track pairs, and the other is a customized Recurrent Neural Network with an attention mechanism and an encoder–decoder structure to associate tracks to the vertex seeds. The performance of the vertex finder is compared with the standard ILC vertex reconstruction algorithm.}
+}
+
+@article{teshima2023actg,
+    author = {Hitoshi Teshima and Naoki Wake and Diego Thomas and Yuta Nakashima and Hiroshi Kawasaki and Katsushi Ikeuchi},
+    title = {{ACT2G}: Attention-based Contrastive Learning for Text-to-Gesture Generation},
+    journal = {Proceedings of the ACM on Computer Graphics and Interactive Techniques},
+    year = {2023},
+    month = 8,
+    volume = {6},
+    number = {3},
+    pages = {pp.~1--17},
+    doi = {https://doi.org/10.1145/3606940},
+    url = {https://dl.acm.org/doi/10.1145/3606940},
+    abstract = {Recent increase of remote-work, online meeting and tele-operation task makes people find that gesture for avatars and communication robots is more important than we have thought. It is one of the key factors to achieve smooth and natural communication between humans and AI systems and has been intensively researched. Current gesture generation methods are mostly based on deep neural network using text, audio and other information as the input, however, they generate gestures mainly based on audio, which is called a beat gesture. Although the ratio of the beat gesture is more than 70\% of actual human gestures, content based gestures sometimes play an important role to make avatars more realistic and human-like. In this paper, we propose a attention-based contrastive learning for text-to-gesture (ACT2G), where generated gestures represent content of the text by estimating attention weight for each word from the input text. In the method, since text and gesture features calculated by the attention weight are mapped to the same latent space by contrastive learning, once text is given as input, the network outputs a feature vector which can be used to generate gestures related to the content. User study confirmed that the gestures generated by ACT2G were better than existing methods. In addition, it was demonstrated that wide variation of gestures were generated from the same text by changing attention weights by creators.},
+}
+
+@article{wang2023realtime,
+    author = {Bowen Wang and Liangzhi Li and Yuta Nakashima and Ryo Kawasaki and Hajime Nagahara},
+    title = {Real-time estimation of the remaining surgery duration for cataract surgery using deep convolutional neural networks and long short-term memory},
+    journal = {BMC Medical Informatics and Decision Making},
+    year = {2023},
+    month = 5,
+    volume = {23},
+    number = {1},
+    pages = {p.~80},
+    doi = {https://doi.org/10.1186/s12911-023-02160-0},
+    url = {https://link.springer.com/article/10.1186/s12911-023-02160-0},
+    abstract = {Estimating the surgery length has the potential to be utilized as skill assessment, surgical training, or efficient surgical facility utilization especially if it is done in real-time as a remaining surgery duration (RSD). Surgical length reflects a certain level of efficiency and mastery of the surgeon in a well-standardized surgery such as cataract surgery. In this paper, we design and develop a real-time RSD estimation method for cataract surgery that does not require manual labeling and is transferable with minimum fine-tuning.}
+}
+
+@article{yang2023multi,
+author = {Zekun Yang and Yuta Nakashima and Haruo Takemura},
+title = {Multi-modal humor segment prediction in video},
+journal = {Multimedia Systems},
+year = {2023},
+month = 6,
+volume={29},
+pages = {pp.~2389--2398},
+doi = {https://doi.org/10.1007/s00530-023-01105-x},
+url = {https://link.springer.com/article/10.1007/s00530-023-01105-x},
+abstract = {Humor can be induced by various signals in the visual, linguistic, and vocal modalities emitted by humans. Finding humor in videos is an interesting but challenging task for an intelligent system. Previous methods predict humor in the sentence level given some text (e.g., speech transcript), sometimes together with other modalities, such as videos and speech. Such methods ignore humor caused by the visual modality in their design, since their prediction is made for a sentence. In this work, we first give new annotations to humor based on a sitcom by setting up temporal segments of ground truth humor derived from the laughter track. Then, we propose a method to find these temporal segments of humor. We adopt an approach based on sliding window, where the visual modality is described by pose and facial features along with the linguistic modality given as subtitles in each sliding window. We use long short-term memory networks to encode the temporal dependency in poses and facial features and pre-trained BERT to handle subtitles. Experimental results show that our method improves the performance of humor prediction.}
+}
+
+@article{wang2022match,
+author = {Bowen Wang and Liangzhi Li and Manisha Verma and Yuta Nakashima and Ryo Kawasaki and Hajime Nagahara},
+title = {Match them up: Visually explainable few-shot image classification},
+journal = {Applied Intelligence},
+year = {2022},
+month = 8,
+pages = {pp.~10956--010977},
+doi = {https://doi.org/10.1007/s10489-022-04072-4},
+abstract = {Few-shot learning (FSL) approaches, mostly neural network-based, assume that pre-trained knowledge can be obtained from base (seen) classes and transferred to novel (unseen) classes. However, the black-box nature of neural networks makes it difficult to understand what is actually transferred, which may hamper FSL application in some risk-sensitive areas. In this paper, we reveal a new way to perform FSL for image classification, using a visual representation from the backbone model and patterns generated by a self-attention based explainable module. The representation weighted by patterns only includes a minimum number of distinguishable features and the visualized patterns can serve as an informative hint on the transferred knowledge. On three mainstream datasets, experimental results prove that the proposed method can enable satisfying explainability and achieve high classification results. Code is available at https://github.com/wbw520/MTUNet.}
+}
+
+@article{tanaka2022corpus,
+  title={Corpus Construction for Historical Newspapers: A Case Study on Public Meeting Corpus Construction Using {OCR} Error Correction},
+  author={Tanaka, Koji and Chenhui Chu and Kajiwara, Tomoyuki and Yuta Nakashima and Takemura, Noriko and Nagahara, Hajime and Fujikawa, Takao},
+  journal={SN Computer Science},
+  volume={3},
+  number={6},
+  pages={17 pages},
+  year={2022},
+  month = 9,
+  doi = {https://doi.org/10.1007/s42979-022-01393-6},
+  url = {https://link.springer.com/article/10.1007/s42979-022-01393-6},
+  abstract = {Large text corpora are indispensable for natural language processing. However, in various fields such as literature and humanities, many documents to be studied are only scanned to images, but not converted to text data. Optical character recognition (OCR) is a technology to convert scanned document images into text data. However, OCR often misrecognizes characters due to the low quality of the scanned document images, which is a crucial factor that degrades the quality of constructed text corpora. This paper works on corpus construction for historical newspapers. We present a corpus construction method based on a pipeline of image processing, OCR, and filtering. To improve the quality, we further propose to integrate OCR error correction. To this end, we manually construct an OCR error correction dataset in the historical newspaper domain, propose methods to improve a neural OCR correction model and compare various OCR error correction models. We evaluate our corpus construction method on the accuracy of extracting articles of a specific topic to construct a historical newspaper corpus. As a result, our method improves the article extraction F score by  via OCR error correction comparing to previous work. This verifies the effectiveness of OCR error correction for corpus construction.}
+}
+
+@article{virgo2022sncs,
+author = {Felix Giovanni Virgo and Chenhui Chu and Takaya Ogawa and Koji Tanaka and Kazuki Ashihara and Yuta Nakashima and Noriko Takemura and Hajime Nagahara and Takao Fujikawa},
+title = {Information Extraction from Public Meeting Articles},
+journal = {SN Computer Science},
+volume = {3},
+number = {285},
+year = {2022},
+pages = {9 pages},
+month = 5,
+doi = {https://doi.org/10.1007/s42979-022-01176-z},
+}
+@article{kuang2022privacy,
+author = {Zhenzhong Kuang and Longbin Teng and Xingchi He and Jiajun Ding and Yuta Nakashima and Noboru Babaguchi}, 
+title = {Anonymous identity sampling and reusable synthesis for sensitive face camouflage},
+journal = {Journal of Electronic Imaging},
+year = {2022},
+volume = {31},
+number = {2}, 
+month = {3},
+pages = {pp.~023011-1--023011-18},
+doi = {https://doi.org/10.1117/1.JEI.31.2.023011}
+}
+
+@article{kumawat2021stft,
+author = {Sudhakar Kumawat and Manisha Verma and Yuta Nakashima and Shanmuganathan Raman}, 
+title = {Depthwise spatio-temporal {STFT} convolutional neural networks for human action recognition}, 
+journal = {IEEE Trans.~Pattern Analysis and Machine Intelligence},
+year = {2022},
+month = 9,
+volume = {44},
+pages = {pp.~4839--4851},
+addendum = {(\textbf{IF: 16.4})},
+url = {https://doi.ieeecomputersociety.org/10.1109/TPAMI.2021.3076522},
+doi = {https://doi.org/10.1109/TPAMI.2021.3076522}
+}
+
+@article{chu2021semantic,
+  title = {The semantic typology of visually grounded paraphrases},
+  author = {Chenhui Chu and Oliveira, Vinicius and Virgo, Felix Giovanni and Otani, Mayu and Garcia, Noa and Yuta Nakashima},
+  journal = {Computer Vision and Image Understanding},
+  year = {2021},
+  volume = {215},
+  month = {12},
+  pages = {10 pages},
+  doi = {https://doi.org/10.1016/j.cviu.2021.103333}
+}
+
+@article{wang2021noisy,
+author = {Bowen Wang and Liangzhi Li and Yuta Nakashima and Ryo Kawasaki and Hajime Nagahara and Yasushi Yagi},
+title = {{Noisy-LSTM}: Improving temporal awareness for video semantic segmentation},
+journal = {IEEE Access}, 
+volume = {9}, 
+pages = {pp.~46810--46820},
+year = {2021},
+month = 3,
+url = {https://doi.org/10.1109/ACCESS.2021.3067928},
+doi = {https://doi.org/10.1109/ACCESS.2021.3067928}
+
+}
+
+@article{yang2021bert,
+author = {Zekun Yang and Noa Garcia and Chenhui Chu and Mayu Otani and Yuta Nakashima and Haruo Takemura}, 
+title = {A comparative study of language Transformers for video question answering}, 
+journal = {Neurocomputing}, 
+volume = {445}, 
+pages = {pp.~121--133},
+year = {2021},
+month = 7,
+url = {https://doi.org/10.1016/j.neucom.2021.02.092},
+addendum = {(\textbf{IF: 5.7})},
+doi = {https://doi.org/10.1016/j.neucom.2021.02.092},
+}
+
+@article{dong2020cross,
+author = {Wenjian Dong and Mayu Otani and Noa Garcia and Yuta Nakashima and Chenhui Chu}, 
+title = {Cross-lingual visual grounding}, 
+journal = {IEEE Access}, 
+volume = {9}, 
+pages = {pp.~349--358}, 
+year = {2020},
+month = 12,
+doi = {https://doi.org/10.1109/ACCESS.2020.3046719}
+}
+
+@article{ashihara2020improving,
+author = {Kazuki Ashihara and Cheikh Brahim El Vaigh and Chenhui Chu and Benjamin Renoust and Noriko Okubo and Noriko Takemura and Yuta Nakashima and Hajime Nagahara},
+title = {Improving topic modeling through homophily for legal documents}, 
+journal = {Applied Network Science}, 
+volume = {5}, 
+pages = {pp.~77:1-77:20}, 
+month = 10,
+year = {2020},
+doi = {https://doi.org/10.1007/s41109-020-00321-y}
+}
+
+@article{babaguchi2021preventing,
+author = {Noboru Babaguchi and Isao Echizen and Junichi Yamagishi and Naoko Nitta and Yuta Nakashima and Kazuaki Nakamura and Kazuhiro Kono and Fuming Fang and Seiko Myojin and Zhenzhong Kuang and Huy H.~Nguyen and Ngoc-Dung T.~Tieu},
+title = {Preventing fake information generation against media clone attacks}, 
+journal = {IEICE Trans.~Information and Systems}, 
+volume = {E104-D}, 
+number = {1}, 
+pages = {pp.~2-11}, 
+month = 1,
+year = {2021},
+doi = {https://doi.org/10.1587/transinf.2020MUI0001}
+}
+
+@article{babaguchi2021generation,
+author = {Noboru Babaguchi and Isao Echizen and Junichi Yamagishi and Naoko Nitta and Yuta Nakashima and Kazuaki Nakamura and Kazuhiro Kono and Fuming Fang and Seiko Myojin and Zhenzhong Kuang and Huy H.~Nguyen and Ngoc-Dung T.~Tieu}, 
+title = {Generation and detection of media clones}, 
+journal = {IEICE Trans.~Information and Systems}, 
+volume = {E104-D}, 
+number = {1}, 
+pages = {pp.~12-23}, 
+month = 1,
+year = {2021},
+doi = {https://doi.org/10.1587/transinf.2020MUI0002}
+}
+
+@article{otani2020visually,
+author = {Mayu Otani and Chenhui Chu and Yuta Nakashima},
+title = {Visually grounded paraphrase identification via gating and phrase localization}, 
+journal = {Neurocomputing}, 
+volume = {404}, 
+month = 9,
+year = {2020},
+pages = {pp.~165--172},
+doi = {https://doi.org/10.1016/j.neucom.2020.04.066},
+addendum = {(\textbf{IF: 5.7})},
+}
+
+
+@article{kimura2020warmer,
+author = {Tsukasa Kimura and Noriko Takemura and Yuta Nakashima and Hirokazu Kobori and Hajime Nagahara and Masayuki Numao and Kazumitsu Shinohara}, 
+title = {Warmer environments increase implicit mental workload even if learning efficiency is enhanced}, 
+journal = {Frontiers in Psychology}, 
+month = 4,
+year = {2020},
+volume = {11},
+pages = {pp.~568:1--568:14},
+doi = {https://doi.org/10.3389/fpsyg.2020.00568}
+}
+
+@article{nakashima2020speech,
+author = {Yuta Nakashima and Takaaki Yasui and Leon Nguyen and Noboru Babaguchi}, 
+title = {Speech-driven face reenactment for a video sequence}, 
+journal = {ITE Trans.~Media Technology and Applications}, 
+volume = {8}, 
+number = {1}, 
+month = 1,
+year = {2020},
+pages = {pp.~60--68},
+doi = {https://doi.org/10.3169/mta.8.60}
+}
+
+@article{garcia2019contextnet,
+author = {Noa Garcia and Benjamin Renoust and Yuta Nakashima}, 
+title = {{ContextNet}: Representation and exploration for painting classification and retrieval in context}, 
+journal = {International Journal on Multimedia Information Retrieval}, 
+month = 12,
+year = {2020},
+volume = {9},
+pages = {pp.~17--30},
+doi = {https://doi.org/10.1007/s13735-019-00189-4}
+}
+
+@article{otani2018finding,
+author = {Mayu Otani and Atsushi Nishida and Yuta Nakashima and Tomokazu Sato and Naokazu Yokoya},
+title = {Finding important people in a video using deep neural networks with conditional random fields},
+journal = {IEICE Trans.~Information Systems}, 
+volume = {E101-D}, 
+number = {10}, 
+pages = {pp.~2509--2517}, 
+month = 10,
+year = {2018},
+doi = {https://doi.org/10.1587/transinf.2018EDP7029}
+}
+
+@article{tanaka2018iterative,
+author = {Takahiro Tanaka and Norihiko Kawai and Yuta Nakashima and Tomokazu Sato and Naokazu Yokoya}, 
+title = {Iterative applications of image completion with CNN-based failure detection}, 
+journal = {Journal of Visual Communication and Image Representation}, 
+volume = {55}, 
+pages = {pp.~56-66}, 
+month = 8,
+year = {2018},
+doi = {https://doi.org/10.1016/j.jvcir.2018.05.015}
+}
+
+@article{tejerodepablos2018summarization,
+author = {Antonio Tejero-de-Pablos and Yuta Nakashima and Tomokazu Sato and Naokazu Yokoya and Marko Linna and Esa Rahtu}, 
+title = {Summarization of user-generated sports video by using deep action recognition features}, 
+journal = {IEEE Trans.~Multimedia}, 
+volume = {20}, 
+number = {8}, 
+pages = {pp.~2000-2011}, 
+month = 8,
+year = {2018},
+doi = {https://doi.org/10.1109/TMM.2018.2794265},
+addendum = {(\textbf{IF: 6.5})},
+}
+
+@article{kawai2017augmented,
+author = {Norihiko Kawai and Tomokazu Sato and Yuta Nakashima and Naokazu Yokoya}, 
+title = {Augmented reality marker hiding with texture deformation}, 
+journal = {IEEE Trans.~Visualization and Computer Graphics}, 
+volume = {23}, 
+number = {10}, 
+pages = {pp.~2288-2300}, 
+month = 10,
+year = {2017},
+doi = {https://doi.org/10.1109/TVCG.2016.2617325},
+addendum = {(\textbf{IF: 4.5})},
+}
+
+@article{otani2017video,
+author = {Mayu Otani and Yuta Nakashima and Tomokazu Sato and Naokazu Yokoya},
+title = {Video summarization using textual descriptions for authoring video blogs}, 
+journal = {Multimedia Tools and Applications}, 
+volume = {76}, 
+number = {9}, 
+pages = {pp.~12097-12115}, 
+month = 5, 
+year = {2017},
+doi = {https://doi.org/10.1007/s11042-016-4061-3}
+}
+
+@article{dayrit2017increasing,
+author = {Fabian Lorenzo Dayrit and Yuta Nakashima and Tomokazu Sato and Naokazu Yokoya},
+title = {Increasing pose comprehension through augmented reality reenactment},
+journal = {Multimedia Tools and Applications}, 
+volume = {76}, 
+number = {1}, 
+pages = {pp.~1291-1312}, 
+month = 1,
+year = {2017}, 
+doi = {https://doi.org/10.1007/s11042-015-3116-1}
+}
+
+@article{tejero2016flexible,
+  title={Flexible human action recognition in depth video sequences using masked joint trajectories},
+  author={Tejero-de-Pablos, Antonio and Yuta Nakashima and Yokoya, Naokazu and D{\'{i}}az-Pernas, Francisco-Javier and Mart{\'{i}}nez-Zarzuela, Mario},
+  journal={EURASIP Journal on Image and Video Processing},
+  volume={2016},
+  number={1},
+  pages={pp.~20:1--20:12},
+  year={2016},
+  publisher={SpringerOpen},
+  month=dec,
+  doi = {https://doi.org/10.1186/s13640-016-0120-y}
+}
+
+@article{katagiri2016novel,
+  title={Novel View Synthesis Based on View-dependent Texture Mapping with Geometry-aware Color Continuity},
+  author={Katagiri, Keita and Yuta Nakashima and Sato, Tomokazu and Yokoya, Naokazu},
+  journal={Transactions of the Virtual Reality Society of Japan},
+  volume={21},
+  number={1},
+  pages={pp.~153--162},
+  year={2016},
+  publisher={THE VIRTUAL REALITY SOCIETY OF JAPAN},
+  month=mar,
+  doi = {https://doi.org/10.18974/tvrsj.21.1_153}
+}
+
+@article{nakashima2016evaluating,
+  title={Evaluating protection capability for visual privacy information},
+  author={Yuta Nakashima and Ikeno, Tomoaki and Babaguchi, Noboru},
+  journal={IEEE Security \& Privacy},
+  volume={14},
+  number={1},
+  pages={pp.~55--61},
+  year={2016},
+  publisher={IEEE},
+  month=jan,
+  doi = {https://doi.org/10.1109/MSP.2016.3}
+}
+
+@article{nakashima2016privacy,
+  title={Privacy protection for social video via background estimation and {CRF}-based videographer's intention modeling},
+  author={Yuta Nakashima and Babaguchi, Noboru and Fan, Jianping},
+  journal={IEICE Trans.~Information and Systems},
+  volume={E99-D},
+  number={4},
+  pages={pp.~1221--1233},
+  year={2016},
+  month=apr,
+  doi = {https://doi.org/10.1587/transinf.2015EDP7378}
+}
+
+
+@article{nakashima2015ar,
+author = {Yuta Nakashima and Yusuke Uno and Norihiko Kawai and Tomokazu Sato and Naokazu Yokoya},
+title = {{AR} image generation using view-dependent geometry modification and texture mapping},
+journal = {Virtual Reality}, 
+volume = {19}, 
+number = {2}, 
+pages = {pp.~83-94}, 
+month = 1,
+year =  {2015},
+doi = {https://doi.org/10.1007/s10055-015-0259-3}
+}
+
+@article{babaguchi2015protection,
+author = {Noboru Babaguchi and Yuta Nakashima},
+title = {Protection and utilization of privacy information via sensing},
+journal = {IEICE Trans.~Information and Systems}, 
+volume = {E98-D}, 
+number = {1}, 
+pages = {pp.~2-9}, 
+month = 1,
+year =  {2015},
+doi = {https://doi.org/10.1587/transinf.2014MUI0001}
+}
+
+@article{kawai2014background,
+author = {Norihiko Kawai and Naoya Inoue and Tomokazu Sato and Fumio Okura and Yuta Nakashima and Naokazu Yokoya},
+title = {Background estimation for a single omnidirectional image sequence captured with a moving camera},
+journal = {IPSJ Trans.~Computer Vision and Applications}, 
+volume = {6}, 
+pages = {pp.~68-72}, 
+month = 7,
+year =  {2014},
+doi = {https://doi.org/10.2197/ipsjtcva.6.68}
+}
+
+@article{nakashima2012intended,
+author = {Yuta Nakashima and Noboru Babaguchi and Jianping Fan},
+title = {Intended human object detection for automatically protecting privacy in mobile video surveillance},
+journal = {Multimedia Systems}, 
+volume = {18}, 
+number = {2}, 
+pages = {pp.~157-173}, 
+month = 3,
+year = {2012},
+doi = {https://doi.org/10.1007/s00530-011-0244-y}
+}
+
+@article{nakashima2011indoor,
+author = {Yuta Nakashima and Ryosuke Kaneto and Noboru Babaguchi},
+title = {Indoor positioning system using digital audio watermarking},
+journal = {IEICE Trans.~Information and Systems}, 
+volume = {E94-D}, 
+number = {1}, 
+pages = {pp.~2201-2211}, 
+month = 11,
+year = {2011},
+doi = {https://doi.org/10.1587/transinf.E94.D.2201}
+}
+
+@article{nakashima2009watermarked,
+author = {Yuta Nakashima and Ryuki Tachibana and Noboru Babaguchi},
+title = {Watermarked movie soundtrack finds the position of the camcorder in a theater},
+journal = {IEEE Trans.~Multimedia}, 
+volume = {11}, 
+number = {3}, 
+pages = {pp.~443-454}, 
+month = 3,
+year = {2009},
+doi = {https://doi.org/10.1109/TMM.2009.2012938},
+addendum = {(\textbf{IF: 6.5})},
+}
