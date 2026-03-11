@@ -6,7 +6,6 @@
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{booktabs}
 \usepackage{caption}
-
 \usepackage{colortbl}
 \usepackage{multirow}    % セル結合用
 \usepackage{tabularx}    % 表用＆カラムサイズ指定
@@ -31,10 +30,10 @@ dashed=false
 
 \addbibresource{bib/conference.bib}
 \addbibresource{bib/journal.bib}
-\addbibresource{bib/report.bib}
-\addbibresource{bib/invited.bib}
-\addbibresource{bib/domestic.bib}
-\addbibresource{bib/book.bib}
+%\addbibresource{bib/report.bib}
+%\addbibresource{bib/invited.bib}
+%\addbibresource{bib/domestic.bib}
+%\addbibresource{bib/book.bib}
 
 \DeclareUnicodeCharacter{0301}{*************************************}
 
@@ -71,6 +70,8 @@ dashed=false
 
 \begin{document}
 
+This repository should be synced with github's im-uo/publications-mimlab.
+
 \printbibliography[type=article,notsubtype=techreport,title={Journal (Reviewed)},heading=subbibliography,resetnumbers=true]
 \nocite{*}
 
@@ -85,9 +86,11 @@ dashed=false
 \nocite{*}
 
 \subsection*{その他}
+
 \noindent\textgt{招待講演}
 \printbibliography[subtype=invited,heading=none,resetnumbers=1]
 \nocite{*}
+
 \noindent\textgt{プレプリント}
 \printbibliography[subtype=arxiv,heading=none,resetnumbers=1]
 \nocite{*}
