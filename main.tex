@@ -1,19 +1,6 @@
-\documentclass[10pt]{jsarticle}
-\usepackage[utf8]{inputenc}
-
+\documentclass[10pt]{ltjarticle}
 \usepackage[margin=23truemm]{geometry}
-\usepackage{wrapfig}
-\usepackage[dvipdfmx]{graphicx}
-\usepackage{booktabs}
-\usepackage{caption}
-\usepackage{colortbl}
-\usepackage{multirow}    % セル結合用
-\usepackage{tabularx}    % 表用＆カラムサイズ指定
-
-%% カラムサイズの指定用 %%
-\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
-\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\usepackage{xcolor}
 
 
 \usepackage[
@@ -22,20 +9,19 @@ style=ieee,
 bibstyle=ieee,
 sorting=ymdt,
 url=false,
-maxbibnames=99,
+maxbibnames=999,
 giveninits=false,
 defernumbers=true,
 dashed=false
 ]{biblatex}
 
-\addbibresource{bib/conference.bib}
-\addbibresource{bib/journal.bib}
-%\addbibresource{bib/report.bib}
-%\addbibresource{bib/invited.bib}
-%\addbibresource{bib/domestic.bib}
-%\addbibresource{bib/book.bib}
 
-\DeclareUnicodeCharacter{0301}{*************************************}
+\addbibresource{bib/conference.bib}
+\addbibresource{bib/report.bib}
+\addbibresource{bib/invited.bib}
+\addbibresource{bib/domestic.bib}
+\addbibresource{bib/book.bib}
+\addbibresource{bib/journal.bib}
 
 \DeclareSortingTemplate{ymdt}{
   \sort{
@@ -68,9 +54,16 @@ dashed=false
 \DeclareFieldFormat[misc]{title}{\mkbibquote{#1}}
 \DeclareFieldFormat{pages}{#1}
 
+
 \begin{document}
 
 This repository should be synced with github's im-uo/publications-mimlab.
+\\
+
+\noindent\textcolor{red}{\textbf{BIBTexファイル記入時の注意:}} \begin{itemize}
+    \item Abstract中の ``\verb+%+'' はバックスラッシュをつけて ``\verb|\%|'' に置き換える
+    \item キーは全て小文字にする
+\end{itemize}
 
 \printbibliography[type=article,notsubtype=techreport,title={Journal (Reviewed)},heading=subbibliography,resetnumbers=true]
 \nocite{*}
@@ -98,7 +91,6 @@ This repository should be synced with github's im-uo/publications-mimlab.
 \noindent\textgt{国内研究会等}
 \printbibliography[subtype=domestic,heading=none,resetnumbers=1]
 \nocite{*}
-
 
 
 \end{document}
