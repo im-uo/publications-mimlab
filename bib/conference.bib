@@ -1,3 +1,77 @@
+@inproceedings{shinoda2025biovita,
+    author = {Risa Shinoda and Kaede Shiohara and Nakamasa Inoue and Kuniaki Saito and Hiroaki Santo and Fumio Okura},
+    title = {{BioVITA}: Biological dataset, model, and benchmark for visual-textual-acoustic alignment},
+    booktitle = {Proc.~the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2026)},
+    year = {2026},
+    month = 6,
+    abstract = {Understanding animal species from multimodal data poses an emerging challenge at the intersection of computer vision and ecology. While recent biological models, such as BioCLIP, have demonstrated strong alignment between images and textual taxonomic information for species identification, the integration of the audio modality remains an open problem. We propose BioVITA, a novel visual-textual-acoustic alignment framework for biological applications. BioVITA involves (i) a training dataset, (ii) a representation model, and (iii) a retrieval benchmark. First, we construct a large-scale training dataset comprising 1.3 million audio clips and 2.3 million images, covering 14,133 species annotated with 34 ecological trait labels. Second, building upon BioCLIP2, we introduce a two-stage training framework to effectively align audio representations with visual and textual representations. Third, we develop a cross-modal retrieval benchmark that covers all possible directional retrieval across the three modalities (i.e., image-to-audio, audio-to-text, text-to-image, and their reverse directions), with three taxonomic levels: Family, Genus, and Species. Extensive experiments demonstrate that our model learns a unified representation space that captures species-level semantics beyond taxonomy, advancing multimodal biodiversity understanding.},
+    entrysubtype = {conference},
+}
+
+@inproceedings{liu2026gaussian,
+    author = {Xinpeng Liu and Fumio Okura},
+    title = {Gaussian mesh renderer for lightweight differentiable rendering},
+    booktitle = {Proc.~the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP2026)},
+    year = {2026},
+    month = 5,
+    abstract = {3D Gaussian Splatting (3DGS) has enabled high-fidelity virtualization with fast rendering and optimization for novel view synthesis. On the other hand, triangle mesh models still remain a popular choice for surface reconstruction but suffer from slow or heavy optimization in traditional mesh-based differentiable renderers. To address this problem, we propose a new lightweight differentiable mesh renderer leveraging the efficient rasterization process of 3DGS, named Gaussian Mesh Renderer (GMR), which tightly integrates the Gaussian and mesh representations. Each Gaussian primitive is analytically derived from the corresponding mesh triangle, preserving structural fidelity and enabling the gradient flow. Compared to the traditional mesh renderers, our method achieves smoother gradients, which especially contributes to better optimization using smaller batch sizes with limited memory.},
+    entrysubtype = {conference},
+}
+
+@inproceedings{shinoda2026animalclap,
+    author = {Risa Shinoda and Kaede Shiohara and Nakamasa Inoue and Hiroaki Santo and Fumio Okura},
+    title = {{AnimalCLAP}: Taxonomy-aware language-audio pretraining for species recognition and trait inference},
+    booktitle = {Proc.~the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP2026)},
+    year = {2026},
+    month = 5,
+    abstract = {Animal vocalizations provide crucial insights for wildlife assessment, particularly in complex environments such as forests, aiding species identification and ecological monitoring. Recent advances in deep learning have enabled automatic species classification from their vocalizations. However, classifying species unseen during training remains challenging. To address this limitation, we introduce AnimalCLAP, a taxonomy-aware language-audio framework comprising a new dataset and model that incorporate hierarchical biological information. Specifically, our vocalization dataset consists of 4,225 hours of recordings covering 6,823 species, annotated with 22 ecological traits. The AnimalCLAP model is trained on this dataset to align audio and textual representations using taxonomic structures, improving the recognition of unseen species. We demonstrate that our proposed model effectively infers ecological and biological attributes of species directly from their vocalizations, achieving superior performance compared to CLAP.},
+    entrysubtype = {conference},
+}
+
+@inproceedings{nakagawa2026interaction,
+    author = {Ren Nakagawa and Yang Yang and Risa Shinoda and Hiroaki Santo and Kenji Oyama and Fumio Okura and Takenao Ohkawa},
+    title = {Interaction-via-Actions: Cattle interaction detection with joint learning of action-interaction latent space},
+    booktitle = {Proc.~the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV2026)},
+    year = {2026},
+    month = 3,
+    abstract = {This paper introduces a method and application for automatic detection of behavioral interaction between grazing cattle from a single image, which is essential for smart livestock management in the cattle industry, such as for detecting estrus. Although the interaction detection for humans has been actively studied, a non-trivial challenge lies in cattle interaction detection, i.e., the lack of a comprehensive behavioral dataset including interaction, since the interactions of grazing cattle are rare events. We, therefore, propose CattleAct, a data-efficient method for interaction detection by decomposing interactions into the combinations of actions by individual cattle. Specifically, we first learn an action latent space from a large-scale cattle action dataset, then embed rare interactions via the fine-tuning of the pre-trained latent space using contrastive learning, constructing a unified latent space of action and interactions. On top of the proposed method, we develop a practical working system integrating video and GPS inputs. Experiments in a commercial-scale pasture show the accurate interaction detection by our method compared to the baselines.},
+    entrysubtype = {conference},
+}
+
+@inproceedings{xing2026zero,
+    author = {Junhao Xing and Ryohei Miyakawa and Yang Yang and Xinpeng Liu and Risa Shinoda and Hiroaki Santo and Yosuke Toda and Fumio Okura},
+    title = {Zero-shot hierarchical plant segmentation via foundation segmentation models and text-to-image attention},
+    booktitle = {Proc.~the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV2026)},
+    year = {2026},
+    month = 3,
+    abstract = {Foundation segmentation models achieve reasonable leaf instance extraction from top-view crop images without training (i.e., zero-shot). However, segmenting entire plant individuals with each consisting of multiple overlapping leaves remains challenging. This problem is referred to as a hierarchical segmentation task, typically requiring annotated training datasets, which are often species-specific and require notable human labor. To address this, we introduce ZeroPlantSeg, a zero-shot segmentation for rosette-shaped plant individuals from top-view images. We integrate a foundation segmentation model, extracting leaf instances, and a vision-language model, reasoning about plants' structures to extract plant individuals without additional training. Evaluations on datasets with multiple plant species, growth stages, and shooting environments demonstrate that our method surpasses existing zero-shot methods and achieves better cross-domain performance than supervised methods.},
+    entrysubtype = {conference},
+}
+
+@inproceedings{liyun2026simlabel,
+    author = {Liyun Zhang and Zheng Lian and Hong Liu and Takanori Takebe and Yuta Nakashima},
+    title = {{SimLabel}: Similarity-Weighted Semi-supervision for Multi-annotator Learning with Missing Labels},
+    booktitle = {Proc.~the AAAI Conference on Artificial Intelligence (AAAI2026)},
+    year = {2026},
+    month = 3,
+    note = {40 (33) 28328-28336},
+    doi = {https://doi.org/10.1609/aaai.v40i33.40061},
+    abstract = {Multi-annotator learning (MAL) aims to model annotator-specific labeling patterns. However, existing methods face a critical challenge: they simply skip updating annotator-specific model parameters when encountering missing labels—a common scenario in real-world crowdsourced datasets where each annotator labels only small subsets of samples. This leads to inefficient data utilization and overfitting risks. To this end, we propose a novel similarity-weighted semi-supervised learning framework (SimLabel) that leverages inter-annotator similarities to generate weighted soft labels for missing annotations, enabling the utilization of unannotated samples rather than skipping them entirely. We further introduce a confidence-based iterative refinement mechanism that combines maximum probability with entropy-based uncertainty to prioritize predicted high-quality pseudo-labels to impute missing labels, jointly enhancing similarity estimation and model performance over time. For evaluation, we contribute a new multimodal multi-annotator dataset, AMER2, with high and more variable missing rates, reflecting real-world annotation sparsity and enabling evaluation across different sparsity levels. Extensive experiments validate the effectiveness of our method.},
+    entrysubtype = {conference},
+}
+
+@inproceedings{liyun2026qumab,
+    author = {Liyun Zhang and Zheng Lian and Hong Liu and Takanori Takebe and Shozo Nishii, and Yuta Nakashima},
+    title = {{QuMAB}: Query-based Multi-annotator Behavior Pattern Learning},
+    booktitle = {Proc.~the AAAI Conference on Artificial Intelligence (AAAI2026)},
+    year = {2026},
+    month = 3,
+    note = {40 (33) 28319--28327},
+    doi = {https://doi.org/10.1609/aaai.v40i33.40060},
+    abstract = {Multi-annotator learning traditionally aggregates diverse annotations to approximate a single “ground truth”, treating disagreements as noise. However, this paradigm faces fundamental challenges: subjective tasks often lack absolute ground truth, and sparse annotation coverage makes aggregation statistically unreliable. We introduce a paradigm shift from sample-wise aggregation to annotator-wise behavior modeling. By treating annotator disagreements as valuable information rather than noise, modeling annotator-specific behavior patterns can reconstruct unlabeled data to reduce annotation cost, enhance aggregation reliability, and explain annotator decision behavior. To this end, we propose QuMAB (Query-based Multi-Annotator Behavior Pattern Learning), which uses lightweight queries to model individual annotators while capturing inter-annotator correlations as implicit regularization, preventing overfitting to sparse individual data while maintaining individualization and improving generalization, with a visualization of annotator focus regions offering an explainable analysis of behavior understanding. We contribute two large-scale datasets with dense per-annotator labels: STREET (4,300 labels/annotator) and AMER (average 3,118 labels/annotator), the first multimodal multi-annotator dataset. Extensive experiments demonstrate the superiority of our QuMAB in modeling individual annotators’ behavior patterns, their utility for consensus prediction, and applicability under sparse annotations.},
+    entrysubtype = {conference},
+}
+
 @inproceedings{ichimiya2025needle,
     author = {Shunsuke Ichimiya and Yuta Nakashima},
     title = {A Needle in a Haystack: Finding Contextual Knowledge for Video Question Answering},
@@ -36,7 +110,7 @@
 
 @inproceedings{hirota2025lotus,
     author = {Yusuke Hirota and Boyi Li and Ryo Hachiuma and Yueh-Hua Wu and Boris Ivanovic and Marco Pavone and Yejin Choi and Yu-Chiang Frank Wang and Yuta Nakashima and Chao-Han Huck Yang},
-    title = {LOTUS: A Leaderboard for Detailed Image Captioning from Quality to Societal Bias and User Preferences},
+    title = {{LOTUS}: A Leaderboard for Detailed Image Captioning from Quality to Societal Bias and User Preferences},
     booktitle = {Proc.~the 63rd Annual Meeting of the Association for Computational Linguistics (ACL2025)},
     year = {2025},
     month = 7,
@@ -61,7 +135,7 @@
 @inproceedings{ramos2025from,
     author = {Ryan Ramos and Yusuke Hirota and Yuta Nakashima and Noa Garcia},
     title = {From Global to Local: Social Bias Transfer in CLIP},
-    booktitle = {Proc.~the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW2025) },
+    booktitle = {Proc.~the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW2025)},
     year = {2025},
     month = 10,
     note = {241--250},
@@ -80,6 +154,26 @@
     entrysubtype = {conference},
 }
 
+@inproceedings{yang2025neuraleaf,
+    author = {Lilika Makabe and Hiroaki Santo and Fumio Okura and Michael S. Brown and Yasuyuki Matsushita},
+    title = {{NeuraLeaf}: Neural parametric leaf models with shape and deformation disentanglement},
+    booktitle = {Proc.~the IEEE/CVF International Conference on Computer Vision (ICCV2025)},
+    year = {2025},
+    month = 10,
+    abstract = {We develop a neural parametric model for 3D leaves for plant modeling and reconstruction that are essential for agriculture and computer graphics. While neural parametric models are actively studied for humans and animals, plant leaves present unique challenges due to their diverse shapes and flexible deformation. To this problem, we introduce a neural parametric model for leaves, NeuraLeaf. Capitalizing on the fact that flattened leaf shapes can be approximated as a 2D plane, NeuraLeaf disentangles the leaves' geometry into their 2D base shapes and 3D deformations. This representation allows learning from rich sources of 2D leaf image datasets for the base shapes, and also has the advantage of simultaneously learning textures aligned with the geometry. To model the 3D deformation, we propose a novel skeleton-free skinning model and create a newly captured 3D leaf dataset called DeformLeaf. We show that NeuraLeaf successfully generates a wide range of leaf shapes with deformation, resulting in accurate model fitting to 3D observations like depth maps and point clouds.},
+    entrysubtype = {conference},
+}
+
+@inproceedings{makabe2025spectral,
+    author = {Lilika Makabe and Hiroaki Santo and Fumio Okura and Michael S. Brown and Yasuyuki Matsushita},
+    title = {Spectral sensitivity estimation with an uncalibrated diffraction grating},
+    booktitle = {Proc.~the IEEE/CVF International Conference on Computer Vision (ICCV2025)},
+    year = {2025},
+    month = 10,
+    abstract = {This paper introduces a practical and accurate calibration method for camera spectral sensitivity using a diffraction grating. Accurate calibration of camera spectral sensitivity is crucial for various computer vision tasks, including color correction, illumination estimation, and material analysis. Unlike existing approaches that require specialized narrow-band filters or reference targets with known spectral reflectances, our method only requires an uncalibrated diffraction grating sheet, readily available off-the-shelf. By capturing images of the direct illumination and its diffracted pattern through the grating sheet, our method estimates both the camera's spectral sensitivity and the diffraction grating parameters in a closed-form manner. Experiments on synthetic and real-world data demonstrate that our approach outperforms reference target-based methods, underscoring its effectiveness and practicality.},
+    entrysubtype = {conference},
+}
+
 @inproceedings{wang2025taming,
     author = {Bowen Wang and Zhouqiang Jiang and Yasuaki Susumu and Shotaro Miwa and Tianwei Chen and Yuta Nakashima},
     title = {Taming the Untamed: Graph-Based Knowledge Retrieval and Reasoning
@@ -89,6 +183,18 @@ for MLLMs to Conquer the Unknown},
     month = 10,
     note = {4732--4742},
     abstract = {The real value of knowledge lies not just in its accumulation, but in its potential to be harnessed effectively to conquer the unknown. Although recent multimodal large language models (MLLMs) exhibit impressing multimodal capabilities, they often fail in rarely encountered domain-specific tasks due to limited relevant knowledge. To explore this, we adopt visual game cognition as a testbed and select "Monster Hunter: World" as the target to construct a multimodal knowledge graph (MH-MMKG), which incorporates multi-modalities and intricate entity relations. We also design a series of challenging queries based on MH-MMKG to evaluate the models' ability for complex knowledge retrieval and reasoning. Furthermore, we propose a multi-agent retriever that enables a model to autonomously search relevant knowledge without additional training. Experimental results show that our approach significantly enhances the performance of MLLMs, providing a new perspective on multimodal knowledge-augmented reasoning and laying a solid foundation for future research.},
+    entrysubtype = {conference},
+}
+
+@inproceedings{liu2025hogs,
+    author = {Xinpeng Liu and Zeyi Huang and Fumio Okura and Yasuyuki Matsushita},
+    title = {{HoGS}: Unified near and far object reconstruction via homogeneous gaussian splatting},
+    booktitle = {Proc.~the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2025)},
+    year = {2025},
+    month = 6,
+    note = {26714--26722},
+    doi = {https://doi.org/10.1109/CVPR52734.2025.02488},
+    abstract = {Novel view synthesis has demonstrated impressive progress recently, with 3D Gaussian splatting (3DGS) offering efficient training time and photorealistic real-time rendering. However, reliance on Cartesian coordinates limits 3DGS's performance on distant objects, which is important for reconstructing unbounded outdoor environments. We found that, despite its ultimate simplicity, using homogeneous coordinates, a concept on the projective geometry, for the 3DGS pipeline remarkably improves the rendering accuracies of distant objects. We therefore propose Homogeneous Gaussian Splatting (HoGS) incorporating homogeneous coordinates into the 3DGS framework, providing a unified representation for enhancing near and distant objects. HoGS effectively manages both expansive spatial positions and scales particularly in outdoor unbounded environments by adopting projective geometry principles. Experiments show that HoGS significantly enhances accuracy in reconstructing distant objects while maintaining high-quality rendering of nearby objects, along with fast training speed and real-time rendering capability.},
     entrysubtype = {conference},
 }
 
