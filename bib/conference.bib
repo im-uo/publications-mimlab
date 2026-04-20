@@ -1,4 +1,26 @@
-@inproceedings{shinoda2025biovita,
+
+
+@inproceedings{yang2026nrgs,
+    author = {Zaiyan Yang and Xinpeng Liu and Heng Guo and Jinglei Shi and Zhanyu Ma and Fumio Okura},
+    title = {{NRGS}: Neural regularization for robust {3D} semantic {Gaussian} splatting},
+    booktitle = {Proc.~the IEEE International Conference on Multimedia and Expo (ICME2026)},
+    year = {2026},
+    month = 7,
+    abstract = {We propose a neural regularization method that refines the noisy 3D semantic field produced by lifting multi-view inconsistent 2D features, in order to obtain an accurate and robust 3D semantic Gaussian Splatting. The 2D features extracted from vision foundation models suffer from multi-view inconsistency due to a lack of cross-view constraints. Lifting these inconsistent features directly into 3D Gaussians results in a noisy semantic field, which degrades the performance of downstream tasks. Previous methods either focus on obtaining consistent multi-view features in the preprocessing stage or aim to mitigate noise through improved optimization strategies, often at the cost of increased preprocessing time or expensive computational overhead. In contrast, we introduce a variance-aware conditional MLP that operates directly on the 3D Gaussians, leveraging their geometric and appearance attributes to correct semantic errors in 3D space. Experiments on different datasets show that our method enhances the accuracy of lifted semantics, providing an efficient and effective approach to robust 3D semantic Gaussian Splatting.},
+    entrysubtype = {conference},
+}
+
+@inproceedings{goto2026unsupervised,
+    author = {Ryohei Goto and Takuya Fujihashi and Shunsuke Saruwatari and Fumio Okura},
+    title = {Unsupervised {3D} human pose estimation via conditional multi-view ancestral sampling},
+    booktitle = {Proc.~the IEEE International Conference on Automatic Face and Gesture Recognition (FG2026)},
+    year = {2026},
+    month = 5,
+    abstract = {We propose a method of estimating a 3D human pose from a single view without 3D supervision. The key to our method is to leverage the 2D diffusion priors of motion diffusion models (MDMs) pre-trained on large 2D human pose datasets. Specifically, we extend multi-view ancestral sampling of diffusion models to the task of 2D-3D lifting of human pose. To this end, we newly propose a conditional multi-view ancestral sampling (cMAS) that optimizes the 3D pose such that its multi-view projections follow the manifold in 2D MDM noise space, while conditioning the 3D pose to match the given 2D poses and anatomical constraints of humans. Experiments on the Yoga dataset demonstrate that our method achieves better cross-domain performance compared to state-of-the-art supervised and unsupervised 3D pose estimation methods, including extreme human poses where 3D supervision is unavailable.},
+    entrysubtype = {conference},
+}
+
+@inproceedings{shinoda2026biovita,
     author = {Risa Shinoda and Kaede Shiohara and Nakamasa Inoue and Kuniaki Saito and Hiroaki Santo and Fumio Okura},
     title = {{BioVITA}: Biological dataset, model, and benchmark for visual-textual-acoustic alignment},
     booktitle = {Proc.~the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2026)},
